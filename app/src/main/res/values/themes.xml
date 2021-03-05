@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.FavorMovie" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Films_GB" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -30,14 +30,14 @@
     <style name="textDefStyle">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/grayColor</item>
-        <item name="fontFamily">@font/roboto_light</item>
+        <item name="fontFamily">@font/roboto</item>
         <item name="android:gravity">left</item>
     </style>
 
     <style name="tagStyle">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/taglineColor</item>
-        <item name="font">@font/roboto_light</item>
+        <item name="font">@font/roboto</item>
     </style>
 
     <style name="ratingBar" parent="Widget.AppCompat.RatingBar.Small">
