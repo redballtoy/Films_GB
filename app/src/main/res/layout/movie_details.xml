@@ -14,7 +14,7 @@
 
 
         <ImageView
-            android:id="@+id/iv_top_view_movie_details"
+            android:id="@+id/ivFilmMainPick"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:contentDescription="@string/top_view_file_picture_movie_details"
@@ -24,7 +24,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/top_pic" />
+            app:srcCompat="@drawable/film_pick" />
 
 
         <View
@@ -32,11 +32,11 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@drawable/top_mask"
-            app:layout_constraintBottom_toBottomOf="@+id/iv_top_view_movie_details"
-            app:layout_constraintEnd_toEndOf="@+id/iv_top_view_movie_details"
+            app:layout_constraintBottom_toBottomOf="@+id/ivFilmMainPick"
+            app:layout_constraintEnd_toEndOf="@+id/ivFilmMainPick"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/iv_top_view_movie_details"
-            app:layout_constraintTop_toTopOf="@+id/iv_top_view_movie_details"
+            app:layout_constraintStart_toStartOf="@+id/ivFilmMainPick"
+            app:layout_constraintTop_toTopOf="@+id/ivFilmMainPick"
             app:layout_constraintVertical_bias="0.0" />
 
         <androidx.constraintlayout.widget.Guideline
@@ -58,11 +58,11 @@
             android:layout_marginStart="@dimen/margin_4x"
             android:layout_marginTop="59dp"
             android:contentDescription="@string/back_arrow"
-            app:layout_constraintBottom_toBottomOf="@+id/iv_top_view_movie_details"
+            app:layout_constraintBottom_toBottomOf="@+id/ivFilmMainPick"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/iv_top_view_movie_details"
+            app:layout_constraintTop_toTopOf="@+id/ivFilmMainPick"
             app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/back_array" />
 
@@ -96,11 +96,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/iv_top_view_movie_details"
+            app:layout_constraintTop_toTopOf="@+id/ivFilmMainPick"
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
-            android:id="@+id/tv_movie_title"
+            android:id="@+id/tvFilmName"
             style="@style/textWhiteStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -132,7 +132,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_movie_title"
+            app:layout_constraintTop_toBottomOf="@+id/tvFilmName"
             app:layout_constraintVertical_bias="0.0" />
 
         <RatingBar

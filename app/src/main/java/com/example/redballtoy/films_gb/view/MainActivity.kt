@@ -1,7 +1,7 @@
 package com.example.redballtoy.films_gb.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.redballtoy.films_gb.R
 
 class MainActivity : AppCompatActivity() {
@@ -15,5 +15,7 @@ class MainActivity : AppCompatActivity() {
                 .replace(R.id.fl_fragment_container, MovieDetails())
                 .commit()
         }
+
+
     }
 }
