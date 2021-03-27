@@ -1,4 +1,4 @@
-package com.example.redballtoy.films_gb.view
+package com.example.redballtoy.films_gb.view.details
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -68,11 +68,11 @@ class MovieDetailsFragment: Fragment() {
 
     private fun setData(movieDetailsData: MovieDetailsData){
         //binding.ivBackdropMoviePath
-        binding.tvOriginalTitle.text=movieDetailsData.originalTitle
+        binding.tvOriginalTitle.text=movieDetailsData.title
         binding.tvAgeCategory.text=movieDetailsData.ageCategory
         binding.tvGenres.text=movieDetailsData.genres.values.toString()
-        binding.rbVoteAverage.rating=(movieDetailsData.voteAverage/2.0F).toFloat()
-        binding.tvVoteCount.text=movieDetailsData.voteCount.toString()
+        binding.rbVoteAverage.rating=(movieDetailsData.vote_average/2.0F).toFloat()
+        binding.tvVoteCount.text=movieDetailsData.vote_count.toString()
         binding.tvOverview.text=movieDetailsData.overview
     }
 
@@ -82,7 +82,7 @@ class MovieDetailsFragment: Fragment() {
     }
 
     companion object{
-        fun newInstance()=MovieDetailsFragment()
+        fun newInstance()= MovieDetailsFragment()
     }
 
 }

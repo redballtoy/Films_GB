@@ -1,10 +1,8 @@
-package com.example.redballtoy.films_gb.view
+package com.example.redballtoy.films_gb
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.example.redballtoy.films_gb.R
-import com.example.redballtoy.films_gb.model.MovieDetailsData
+import com.example.redballtoy.films_gb.view.details.MovieDetailsFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +16,7 @@ class MainActivity : AppCompatActivity() {
                 .commit()
         }
 
-        Log.d("myLog", MovieDetailsData().printInfo())
+        //Log.d("myLog", MovieDetailsData().printInfo())
 
     }
 }
