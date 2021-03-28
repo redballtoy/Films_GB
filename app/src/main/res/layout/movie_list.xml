@@ -10,9 +10,9 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="24dp"
+        android:layout_width="16dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:src="@drawable/target_ic"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
 
-        app:layout_constraintGuide_percent="0.1" />
+        app:layout_constraintGuide_begin="77dp" />
 
     <TextView
         android:id="@+id/textView2"
